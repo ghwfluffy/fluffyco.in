@@ -1,6 +1,3 @@
-// Ghetto devserver
-setTimeout(() => { location.reload(); }, 2000);
-
 // redirect class
 document.addEventListener('DOMContentLoaded', function() {
   function handle(event) {
