@@ -1,0 +1,82 @@
+BODY {
+  background-color: #1a182b;
+}
+
+.logo {
+  width: 20rem;
+}
+
+.content {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 10rem;
+  font-family: sans-serif;
+  padding-bottom: 1rem;
+  color: white;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.links > div {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.link-image {
+  height: 10rem;
+  width: 10rem;
+  fill: #6e5494;
+  transition: fill 0.3s ease;
+}
+
+.link-image:hover {
+  fill: #FFFFFF;
+  transition: fill 0.1s ease;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+#popup {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 1.0);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  pointer-events: none;
+}
+
+#clipboardImg {
+  position: absolute;
+  pointer-events: none;
+  animation: fadeOut 1s forwards;
+  opacity: 0;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.permissionless {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  padding-top: 4rem;
+}
+
+.permissionless > div {
+  width: 100%;
+}
