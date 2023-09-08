@@ -1,9 +1,6 @@
-BODY {
+/* Body */
+body {
   background-color: #1a182b;
-}
-
-.logo {
-  width: 20rem;
 }
 
 .content {
@@ -14,6 +11,12 @@ BODY {
   align-items: center;
 }
 
+/* Logo */
+.logo {
+  width: 20rem;
+}
+
+/* Title */
 .title {
   font-size: 10rem;
   font-family: sans-serif;
@@ -21,6 +24,7 @@ BODY {
   color: white;
 }
 
+/* Links */
 .links {
   display: flex;
   justify-content: space-between;
@@ -44,6 +48,7 @@ BODY {
   cursor: pointer;
 }
 
+/* Hover over popup */
 .hidden {
   display: none;
 }
@@ -57,6 +62,7 @@ BODY {
   pointer-events: none;
 }
 
+/* Clipboard image */
 #clipboardImg {
   position: absolute;
   pointer-events: none;
@@ -67,16 +73,4 @@ BODY {
 @keyframes fadeOut {
   0% { opacity: 1; }
   100% { opacity: 0; }
-}
-
-.permissionless {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  padding-top: 4rem;
-}
-
-.permissionless > div {
-  width: 100%;
 }
