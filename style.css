@@ -4,8 +4,8 @@ body {
 }
 
 .content {
-  padding-top: 2rem;
   display: flex;
+  padding-top: 2rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -73,4 +73,15 @@ body {
 @keyframes fadeOut {
   0% { opacity: 1; }
   100% { opacity: 0; }
+}
+
+/* README link */
+.readme {
+  display: flex;
+  padding-top: 2rem;
+}
+
+.readme > a {
+  color: #ccccff;
+  text-decoration: none;
 }
