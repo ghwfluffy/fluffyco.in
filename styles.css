@@ -1,5 +1,11 @@
 /* Body */
+html {
+  font-size: 16px;
+}
+
 body {
+  margin: 0px;
+  padding: 0px;
   background-color: #1a182b;
 }
 
@@ -11,35 +17,30 @@ body {
   align-items: center;
 }
 
-/* Logo */
-.logo {
-  width: 20rem;
-}
-
-/* Title */
-.title {
-  font-size: 10rem;
-  font-family: sans-serif;
-  padding-bottom: 1rem;
-  color: white;
-}
-
 /* Links */
 .links {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .links > div {
   padding-left: 1rem;
   padding-right: 1rem;
+  position: relative;
+}
+
+.link-pad {
+  width: 20%;
 }
 
 .link-image {
-  height: 10rem;
-  width: 10rem;
+  position: absolute;
+  top: 50%;
+  width: 100%;
   fill: #6e5494;
   transition: fill 0.3s ease;
+  transform: translate(-50%, -50%);
 }
 
 .link-image:hover {
@@ -84,4 +85,8 @@ body {
 .readme > a {
   color: #ccccff;
   text-decoration: none;
+}
+
+.readme > a:hover {
+  color: #ffffff;
 }

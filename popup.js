@@ -38,7 +38,7 @@ function bindPopup(div, text) {
 
   function show(event) {
     popup.classList.remove('hidden');
-    popup.style.left = (event.pageX + 10) + 'px';
+    popup.style.left = (event.pageX - 150) + 'px';
     popup.style.top = (event.pageY + 10) + 'px';
     popup.innerHTML = text;
   }
@@ -65,7 +65,7 @@ document.addEventListener('click', function(event) {
     }
   }
   // The clicked element is outside the div, hide it
-  popup.style.display = 'none';
+  popup.classList.add('hidden');
 });
 
 bindPopup("emailPopup", "ghw@ghwfluffy.com");
